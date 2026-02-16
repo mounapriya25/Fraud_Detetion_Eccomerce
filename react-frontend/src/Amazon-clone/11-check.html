@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+        <style>
+           
+            .over{
+                overflow: hidden;
+            }
+            .float{
+                display: grid;
+                grid-template-columns:45% 50% ;
+            }
+            .c{
+                border: 2px solid rgb(185, 175, 175) ;
+                margin-left: 15px;
+                padding-left: 30px;
+            }
+            .f{
+                display: grid;
+                grid-template-columns:60% 37% ;
+               
+            }
+           h3{
+            margin:50px 30px 10px 20px;
+           }
+           h4{
+            color: rgb(5, 93, 5);
+
+           }
+           .g{
+            display: grid;
+            grid-template-columns: 30% 35% 35%;
+           }
+           .name{
+            font-weight: 1000;
+            font-size:x-large;
+           }
+           .cost{
+            color: rgb(251, 129, 7);
+            font-size: larger;
+           }
+           .span{
+            color: rgb(1, 106, 244);
+           padding-left :10px ;
+           }
+           input{
+            vertical-align: sub;
+            
+           }
+           .p{
+            color: green;
+            display: inline;
+            font-size: large;
+            font-weight: 700;
+           }
+           .p1{
+            text-indent: 30px;
+            line-height:1px ;
+            font-weight: lighter;
+           }
+           button{
+            background-color:rgb(246, 205, 3);
+            width: 230px;
+            border: none;
+            height:30px ;
+            border-radius:9px ;
+            
+           }
+           div.fl{
+             float: right;
+             padding-right: 30px;
+             color: green;
+           }
+           .order{
+             color:brown;
+             font-size: larger;
+             font-weight: bold;
+           }
+           .con{
+            height: 380px;
+            margin-top: 18px;
+           }
+          
+           
+
+           @media screen and (max-width:900px){
+            .prod{
+                display: none;
+            }
+        }
+        </style>
+        
+    </head>
+    <body>
+
+        <div class="over float">
+          <a href="index.html"><div style="margin-top: 20px;"> <img  src="javascript-amazon-project-main\images\amazon-logo.png" width="100" height="40px"></div></a>
+                <h2>Checkout<span style="color: green;">(<span class="js-qt">2</span> items)</span></h2>
+        </div>
+
+
+
+       <h3>Review Your order</h3>
+        <div class="over f">
+            <div class="prod js-cart"></div>
+
+
+
+            <div class="c con js-order">
+                
+            </div>
+        </div>
+        
+       <!--<script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>-->
+        <script type="module" src="11-check.js" deffer>//deffer  improves the page laoding performance
+            // it main order that js is run after html
+        </script>
+    </body>
+</html>

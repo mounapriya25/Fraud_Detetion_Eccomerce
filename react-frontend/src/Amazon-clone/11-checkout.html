@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+        <style>
+           
+            .over{
+                overflow: hidden;
+            }
+            .float{
+                display: grid;
+                grid-template-columns:45% 50% ;
+            }
+            .c{
+                border: 2px solid rgb(185, 175, 175) ;
+                margin-left: 15px;
+                padding-left: 30px;
+            }
+            .f{
+                display: grid;
+                grid-template-columns:60% 37% ;
+               
+            }
+           h3{
+            margin:50px 30px 20px 20px;
+           }
+           h4{
+            color: rgb(5, 93, 5);
+
+           }
+           .g{
+            display: grid;
+            grid-template-columns: 30% 35% 35%;
+           }
+           .name{
+            font-weight: 1000;
+            font-size:x-large;
+           }
+           .cost{
+            color: rgb(251, 129, 7);
+            font-size: larger;
+           }
+           .span{
+            color: rgb(1, 106, 244);
+           padding-left :10px ;
+           }
+           input{
+            vertical-align: sub;
+            
+           }
+           .p{
+            color: green;
+            display: inline;
+            font-size: large;
+            font-weight: 700;
+           }
+           .p1{
+            text-indent: 30px;
+            line-height:1px ;
+            font-weight: lighter;
+           }
+           button{
+            background-color:rgb(246, 205, 3);
+            width: 230px;
+            border: none;
+            height:30px ;
+            border-radius:9px ;
+            
+           }
+           div.fl{
+             float: right;
+             padding-right: 30px;
+             color: green;
+           }
+           .order{
+             color:brown;
+             font-size: larger;
+             font-weight: bold;
+           }
+           .con{
+            height: 380px;
+           }
+           @media screen and (max-width:900px){
+            .prod{
+                display: none;
+            }
+            
+           }
+
+        </style>
+        
+    </head>
+    <body>
+        <div class="over float ">
+          <div style="margin-top: 20px;">  <img  src="javascript-amazon-project-main\images\amazon-logo.png" width="100" height="40px"></div>
+            <h2>Checkout<span style="color: green;">(<span class="quantity">0</span> items)</span></h2>
+        </div>
+
+
+
+        <h3>Review Your order</h3>
+        <div class="over f">
+            <div class="prod">
+                <div class=" c">
+                    <h4 class="name"> Delivery date:<span> Tuesday , June 21</span></h4>
+                    <div class="g">
+                        <div class="cont">
+                            <img  class="img" src="javascript-amazon-project-main\images\products\athletic-cotton-socks-6-pairs.jpg" width="200" height="250">
+                        </div>
+                        <div style="margin-left: 10px;">
+                            <p class="name">Athletic Cotton Socks-6-pairs</p>
+                            <p class="cost">$7.99</p>
+                            <p style="font-size: large;">Quantity:<span>2</span> <span class="span">Update</span> <span class="span"> Delete</span></p>
+                        </div>
+                   
+                        <div>
+                            <p class="name"> Choose a delivery option:</p>
+                            <form>
+                                <input type="radio" name="date">
+                                <label> 
+                                    <p class="p">Tuesday, June 21</p>
+                                    <p  class="p1">FREE Shipping</p><br></label>
+                                <input type="radio" name="date">
+                                <label><p class="p">Wednesday, June 13</p>
+                                     <p class="p1">Rs 50 Shipping</p><br>
+                                </label>
+                                <input type="radio" name="date">
+                                <label>
+                                    <p class="p">Monday, June 9</p>
+                                    <p class="p1">Rs 70 Shipping</p><br>
+                                </label>
+                             </form>
+                        </div>
+                    </div>
+                </div>
+           
+
+                <div class=" c prod">
+                    <h4 class="name"> Delivery date:<span> Tuesday , June 21</span></h4>
+                    <div class="g">
+                        <div class="cont">
+                            <img  class="img" src="javascript-amazon-project-main\images\products\athletic-cotton-socks-6-pairs.jpg" width="200" height="250">
+                       </div>
+                       <div style="margin-left: 10px;">
+                            <p class="name">Athletic Cotton Socks-6-pairs</p>
+                            <p class="cost">$7.99</p>
+                            <p style="font-size: large;">Quantity:<span>2</span> <span class="span">Update</span> <span class="span"> Delete</span></p>
+                       </div>
+                       <div>
+                            <p class="name"> Choose a delivery option:</p>
+                             <form>
+                                <input type="radio" name="date">
+                                <label> 
+                                    <p class="p">Tuesday, June 21</p>
+                                    <p  class="p1">FREE Shipping</p><br></label>
+                                <input type="radio" name="date">
+                                <label><p class="p">Wednesday, June 13</p>
+                                    <p class="p1">Rs 50 Shipping</p><br>
+                                </label>
+                                <input type="radio" name="date">
+                                <label>
+                                    <p class="p">Monday, June 9</p>
+                                    <p class="p1">Rs 70 Shipping</p><br>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+      
+
+            <div class="c con">
+                <center><h3>Order Summary</h3></center>
+                <div class="fl">$70</div>
+                <p>Items (<span >1</span>):</p>
+                
+                <div class="fl">$70</div>
+                <p>Shipping & handling</p>
+                
+                <div class="fl">$70</div>
+                <p>Total before tax:</p>
+                
+                <div class="fl">$70</div>
+                <p>Estimated tax (10%):</p>
+               
+                <hr>
+
+                <div class="order" >
+                <div class="fl" style="color:rgb(113, 7, 7);">$52.51</div>
+                <p>Order total:</p>
+                
+                </div>
+
+                <button >Place your order</button>
+            </div>
+        </div>
+    </body>
+</html>
