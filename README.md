@@ -1,6 +1,6 @@
 # Real-Time Fraud Detection E-Commerce App
 
-**Tech Stack:** React | Tailwind CSS | Node.js | AWS Lambda | DynamoDB
+**Tech Stack:** React | Tailwind CSS | Node.js | AWS Lambda | DynamoDB | Sagemaker
 
 ---
 
@@ -15,11 +15,14 @@ The backend is **serverless**, using AWS Lambda functions and DynamoDB for scala
 - **User Authentication:** Sign up and login.
 - **Fraud Detection:** Real-time ML-based detection for transactions.
 - **Dashboard:** Dynamic metrics and charts (total transactions, fraud, amounts).
-- **Shop & Cart:** Browse products, filter, search, and add to cart.
+- **Shop & Cart:** Browse products, filter, search, add to cart, view/edit cart items, and checkout.
+- **Transaction Prediction:** Predicts if a transaction is safe or fraudulent.
 - **Dark/Light Mode:** Toggle seamlessly with Tailwind CSS.
 - **Serverless Backend:** Lambda functions handle business logic; DynamoDB stores data.
 
 ---
+
+
 
 ## Usage
 1. Open the app → landing page.
@@ -27,11 +30,11 @@ The backend is **serverless**, using AWS Lambda functions and DynamoDB for scala
 3. Login → access dashboard.
 4. View metrics, fraud alerts, and charts on the dashboard.
 5. Shop → browse, search, filter products, and add to cart.
-6. Click on **Cart** → view cart items, edit quantities, or remove items.
+6. Click on Cart → view cart items, edit quantities, or remove items.
 7. Fill in user details in the checkout section.
-8. Click **Check Transaction** → the system predicts whether the transaction is safe or fraudulent.
+8. Click Check Transaction → the system predicts whether the transaction is safe or fraudulent.
 9. Toggle dark/light mode.
-10. Logout to end session.
+   . Logout to end session.
 
 ---
 
@@ -40,8 +43,14 @@ The backend is **serverless**, using AWS Lambda functions and DynamoDB for scala
 React Frontend
        |
        v
-  API Calls
+ Node.js Backend (API: Login, Signup, Shop, Cart, Checkout)
        |
- AWS Lambda Functions
+ AWS Lambda Functions (Business Logic & Fraud Detection)
        |
-   DynamoDB Tables
+   DynamoDB Tables (User, Transactions, Products)
+       |
+ Transaction Prediction Engine
+       |
+ Lambda returns prediction to Node.js
+       |
+ React displays result to user (Safe or Fraudulent)
