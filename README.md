@@ -25,10 +25,13 @@ The backend is **serverless**, using AWS Lambda functions and DynamoDB for scala
 1. Open the app → landing page.
 2. Sign up → register with personal info.
 3. Login → access dashboard.
-4. View metrics, fraud alerts, and charts.
-5. Shop → browse, search, filter products, add to cart.
-6. Toggle dark/light mode.
-7. Logout to end session.
+4. View metrics, fraud alerts, and charts on the dashboard.
+5. Shop → browse, search, filter products, and add to cart.
+6. Click on **Cart** → view cart items, edit quantities, or remove items.
+7. Fill in user details in the checkout section.
+8. Click **Check Transaction** → the system predicts whether the transaction is safe or fraudulent.
+9. Toggle dark/light mode.
+10. Logout to end session.
 
 ---
 
