@@ -10,7 +10,8 @@ import Chart from "@mui/icons-material/AnalyticsOutlined";
 import Light from "@mui/icons-material/LightModeSharp";
 import Dark from "@mui/icons-material/DarkMode";
 import Shop from "@mui/icons-material/LocalMall";
-import ProductGrid from "./Amazon-clone/Header"
+import Logout from "@mui/icons-material/LogoutOutlined";
+import ProductGrid from "./Amazon-clone/Projucts"
 import Shop2 from "@mui/icons-material/ShoppingBasket"
 
 
@@ -26,7 +27,8 @@ import Shop2 from "@mui/icons-material/ShoppingBasket"
           <div className=" border-1 h-10 p-2 rounded-lg pb-3  text-gray-700 dark:text-gray-100  hover:bg-gray-400 hover:dark:bg-gray-500 " onClick={()=>nav("/")} title="Dashboard"><Dashboard /></div>
      
           <div className=" border-1 h-10 p-2 rounded-lg pb-3  text-gray-700 dark:text-gray-100  bg-gray-400 dark:bg-gray-500 "  onClick={()=>nav("/shop")} title="Shop"><Shop/></div>
-       
+             <div className=" border-1 h-10 p-2 rounded-lg pb-3  text-gray-700 dark:text-gray-100  hover:bg-gray-400 hover:dark:bg-gray-500 " onClick={()=>nav("/logout")} title="Dashboard"><Logout /></div>
+     
       </div>
       
       <div className="mt-3 min-h-screen min-w-full" >

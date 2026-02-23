@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 import Analysis from "@mui/icons-material/DonutLargeOutlined";
 import Shop from "@mui/icons-material/LocalMall";
 import Light from "@mui/icons-material/LightModeSharp";
+import Logout from "@mui/icons-material/LogoutOutlined";
 import Dark from "@mui/icons-material/DarkMode";
 
 export default function FraudDashboard() {
@@ -53,6 +54,8 @@ export default function FraudDashboard() {
         <div className="border-1 h-10 p-2 rounded-lg pb-3 text-gray-700 dark:text-gray-100 hover:bg-gray-400 dark:hover:bg-gray-500" onClick={() => nav("/shop")} title="Shop">
           <Shop />
         </div>
+          <div className=" border-1 h-10 p-2 rounded-lg pb-3  text-gray-700 dark:text-gray-100  hover:bg-gray-400 hover:dark:bg-gray-500 " onClick={()=>nav("/logout")} title="Dashboard"><Logout /></div>
+     
       </div>
 
       {/* Main Dashboard */}

@@ -116,7 +116,7 @@ export default function ProductGrid() {
                   }}
                   className="flex items-center gap-2 px-5 py-3 rounded-full
                              bg-green-600 text-zinc-700 dark:text-zinc-100 font-semibold
-                             hover:scale-105 transition"
+                             hover:scale-105 transition  hover:bg-green-900 "
                 >
                  <AddCart/> Add
                 </button>

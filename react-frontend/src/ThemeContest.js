@@ -6,6 +6,7 @@ export const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
   const [dark, setDark] = useState(true);
+  const [userdata, setUserdata] = useState();
 
   // Transactions state
   const [transactions, setTransactions] = useState([]);
@@ -58,6 +59,10 @@ export function ThemeProvider({ children }) {
     }
   }, [dark]);
 
+  const setUser=(data)=>{
+    setUserdata(data);
+  }
+
   // Fetch transactions once on mount
   useEffect(() => {
     fetchTransactions();
@@ -73,6 +78,8 @@ export function ThemeProvider({ children }) {
         error,
         fetchTransactions,
         updateTransaction,
+        userdata,
+        setUser,
       }}
     >
       {children}

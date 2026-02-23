@@ -12,10 +12,10 @@ import Arrow from "@mui/icons-material/ArrowBack";
 import axios from "axios";
 
 export default function PlaceOrder() {
-  const { dark, fetchTransactions } = useContext(ThemeContext);
+  const { dark, fetchTransactions ,userdata} = useContext(ThemeContext);
   const [cartItems, setCartItems] = useState([]);
   const [userInfo, setUserInfo] = useState({
-    userid: "",
+     userid:userdata?.userid,
     source: "Direct",
     browser: "Chrome",
     "Payment.Method": "credit card",
@@ -92,12 +92,12 @@ export default function PlaceOrder() {
     // Timestamp fields
     const ts = new Date();
     const timestampData = {
-  Trans_Year: ts.getFullYear(),
-  Trans_Month: ts.getMonth() + 1,
-  Trans_Day: ts.getDate(),
-  Trans_DayOfWeek: ts.getDay(),
-  "Transaction.Hour": ts.getHours(),
-};
+      Trans_Year: ts.getFullYear(),
+      Trans_Month: ts.getMonth() + 1,
+      Trans_Day: ts.getDate(),
+      Trans_DayOfWeek: ts.getDay(),
+      "Transaction.Hour": ts.getHours(),
+    };
 
 
     // Prepare cart data for Lambda
@@ -111,9 +111,10 @@ export default function PlaceOrder() {
       source: item.source || userInfo.source,
       browser: item.browser || userInfo.browser,
       ...timestampData,
-      userid: userInfo.userid,
+     ...userdata,
+      
     }));
-    console.log(cartData)
+    console.log(cartData,'kkkkkkkkkkkkk',userdata)
     try {
       const response = await axios.post(
       "http://localhost:5000/",
@@ -229,18 +230,7 @@ export default function PlaceOrder() {
   </h3>
 
   <div className="space-y-4 mt-4">
-    <input
-      type="text"
-      name="userid"
-      placeholder="User ID"
-      value={userInfo.userid}
-      onChange={handleUserChange} required
-      className={`w-full p-3 rounded-lg border ${
-        dark
-          ? "border-zinc-700 bg-zinc-800 text-white placeholder-zinc-400"
-          : "border-gray-300 bg-gray-50 text-gray-800 placeholder-gray-400"
-      } focus:outline-none focus:ring-2 focus:ring-yellow-400`}
-    />
+    
 
     <div className="grid grid-cols-2 gap-4">
       <select
