@@ -330,7 +330,7 @@ export default function PlaceOrder() {
             className="w-full mt-6 bg-yellow-400 hover:bg-yellow-700 py-3 rounded-xl font-bold text-black"
             onClick={handlePlaceOrder}
           >
-            Place your order
+            Check your Transaction
           </button>
 
           {predictionResult && (
