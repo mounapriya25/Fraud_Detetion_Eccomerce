@@ -25,9 +25,8 @@ The backend is **serverless**, using AWS Lambda functions and DynamoDB for scala
 
 ## Demo Video
 🎥 Watch the project demo here:  
-[Click to Watch Demo](https://your-video-link.com](https://drive.google.com/file/d/1P5vV68KvLcHGRzCX5mPYiqY_VYvxmWX1/view?usp=sharing)
+[Click to Watch Demo](https://drive.google.com/file/d/1P5vV68KvLcHGRzCX5mPYiqY_VYvxmWX1/view?usp=sharing)
 
-> Replace `https://your-video-link.com` with your actual YouTube, Google Drive, or Loom video link.
 
 ---
 ## Usage
